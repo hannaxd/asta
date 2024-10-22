@@ -11,7 +11,7 @@ import { asta } from "@rawrxd/asta";
 
 const emitter = asta();
 
-emitter.on('event', (data) => {
+emitter.on("event", (data) => {
   console.log("Received event with data:" + data);
 });
 ```
@@ -28,7 +28,7 @@ interface AppEvents {
 
 const emitter = asta<AppEvents>();
 
-emitter.on('login', ({ username }) => {
+emitter.on("login", ({ username }) => {
   console.log(`${username} logged in`);
 });
 ```
